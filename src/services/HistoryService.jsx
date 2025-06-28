@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.VITE_BASE_URL;
+const API_BASE_URL = "https://pomodoro.arthur-heude.dev";
 
 async function createHistory(action, break_length, session_length, time, type) {
 	const response = await fetch(`${API_BASE_URL}/api/history`, {
